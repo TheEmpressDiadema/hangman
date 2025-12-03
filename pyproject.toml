@@ -1,7 +1,7 @@
 [project]
 name = "hangman"
 version = "0.1.0"
-description = "Add your description here"
+description = "Hangman console game project"
 readme = "README.md"
 authors = [
     { name = "TheEmpressDiadema", email = "mauhkpaffftep@gmail.com" }
@@ -10,7 +10,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-hangman = "hangman:main"
+hangman = "hangman.main:main"
 
 [build-system]
 requires = ["uv_build>=0.9.14,<0.10.0"]
