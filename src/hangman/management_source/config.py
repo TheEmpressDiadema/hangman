@@ -1,10 +1,14 @@
-class Config:
-    _ru_path = "src/hangman/data/ru.txt"
-    _eng_path = "src/hangman/data/eng.txt"
-    _alphabets = {
+class LanguageConfig:
+    languages = ['ru', 'eng']
+    paths = {
+        "ru" : "src/hangman/data/ru.txt",
+        "eng" : "src/hangman/data/eng.txt"
+    }
+    alphabets = {
         "ru" : "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
         "eng" : "abcdefghijklmnopqrstuvwxyz"
     }
-    _mask_character = "_"
-    _default_mistake_count = 5
-    _default_language = "ru"
+
+class GameConfig:
+    mask_character = "_"
+    mistake_count = 5
